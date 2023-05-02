@@ -1,9 +1,13 @@
 @import 'reset';
 @import 'colors';
 @import 'main';
+@import 'hero';
+@import 'homepage';
 @import 'cart';
 @import 'product';
 @import 'footer';
+@import 'success';
+@import 'mediaqueries';
 
 body {
     background-color: var(--background);
