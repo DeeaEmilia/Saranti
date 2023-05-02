@@ -2,6 +2,15 @@ import { useState, useEffect } from 'react';
 import { sanityClient } from '../helpers/client';
 import { FooterBanner, HeroBanner } from '../components';
 import { Product } from '../components';
+
+async function getSanityData() {
+    const productQuery = '*[_type == "product"]';
+    const products = await sanityClient.fetch(productQuery);
+    const bannerQuery = '*[_type == "banner"]';
+    const banner = await sanityClient.fetch(bannerQuery);
+    return [products, banner];
+}
+
 const HomePage = () => {
     const [products, setProducts] = useState([]);
     const [banner, setBanner] = useState([]);
