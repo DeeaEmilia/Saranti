@@ -1,27 +1,45 @@
-import { AiOutlineShopping } from 'react-icons/ai';
+// import { AiOutlineShopping } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { useStateContext } from '../context/StateContext';
 import Cart from './Cart';
+import cartIcon from '../assets/cartIcon.png';
 
 const Navbar = () => {
     const { showCart, setShowCart, totalQuantities } = useStateContext();
     return (
-        <div className="navbar-container">
-            <p className="logo">
-                <Link to="/">Gadgeteen Headphones</Link>
-            </p>
+        <nav className="navbar-container">
+            <div className="logo">
+                <Link to="/">Saranti</Link>
+            </div>
 
-            <button
-                type="button"
-                className="cart-icon"
-                onClick={() => setShowCart(true)}
-            >
-                <AiOutlineShopping />
-                <span className="cart-item-qty">{totalQuantities}</span>
-            </button>
+            <div className="input-wrapper">
+                <input type="text" id="search-bar" placeholder="Search..." />
+            </div>
+
+            <div className="nav-items">
+                <ul>
+                    <li>
+                        <Link to="/some-page">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/another-page">Shop</Link>
+                    </li>
+                    <li>
+                        <Link to="/blog">Blog</Link>
+                    </li>
+                </ul>
+                <button
+                    type="button"
+                    className="cart-icon"
+                    onClick={() => setShowCart(true)}
+                >
+                    <img src={cartIcon} alt="Custom Icon" />
+                    <span className="cart-item-qty">{totalQuantities}</span>
+                </button>
+            </div>
 
             {showCart && <Cart />}
-        </div>
+        </nav>
     );
 };
 
