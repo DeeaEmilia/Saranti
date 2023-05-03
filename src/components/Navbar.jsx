@@ -19,13 +19,19 @@ const Navbar = () => {
             <div className="nav-items">
                 <ul>
                     <li>
-                        <Link to="/some-page">About</Link>
+                        <Link className="btn" to="/some-page">
+                            About
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/another-page">Shop</Link>
+                        <Link className="btn" to="/another-page">
+                            Shop
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/blog">Blog</Link>
+                        <Link className="btn" to="/blog">
+                            Blog
+                        </Link>
                     </li>
                 </ul>
                 <div className="tooltip">
