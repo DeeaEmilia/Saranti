@@ -13,7 +13,11 @@ const Navbar = () => {
             </div>
 
             <div className="input-wrapper">
-                <input type="text" id="search-bar" placeholder="Search..." />
+                <input
+                    type="text"
+                    className="search-bar"
+                    placeholder="Search..."
+                />
             </div>
 
             <div className="nav-items">

@@ -1,20 +1,33 @@
 @font-face {
-  font-family: 'Caveat';
-  src: url(../assets/fonts/Caveat-Medium.ttf);
+    font-family: 'Caveat';
+    src: url(../assets/fonts/Caveat-Medium.ttf);
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url(../assets/fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gloria';
+    src: url(../assets/fonts/GloriaHallelujah-Regular.ttf);
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(../assets/fonts/Comfortaa-Regular.ttf);
+}
 * {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }

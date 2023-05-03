@@ -8,14 +8,13 @@
 
 .product-detail-image {
     border-radius: 15px;
-    background-color: #ebebeb;
-
+    background-color: var(--primary-light);
     width: 400px;
     height: 400px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     &:hover {
-        background-color: #f02d34;
+        background-color: var(--primary-dark);
     }
 }
 
@@ -33,10 +32,10 @@
 }
 
 .selected-image {
-    background-color: #f02d34;
+    background-color: var(--primary-light);
 }
 .reviews {
-    color: #f02d34;
+    color: var(--primary-light);
     margin-top: 10px;
     display: flex;
     gap: 5px;
@@ -54,7 +53,7 @@
         font-weight: 700;
         font-size: 26px;
         margin-top: 30px;
-        color: #f02d34;
+        color: var(--primary-light);
     }
     .quantity {
         display: flex;
@@ -67,12 +66,11 @@
         gap: 30px;
         .add-to-cart {
             padding: 10px 20px;
-            border: 1px solid #f02d34;
             margin-top: 40px;
             font-size: 18px;
             font-weight: 500;
-            background-color: white;
-            color: #f02d34;
+            background-color: var(--primary-light);
+            color: var(--background);
             cursor: pointer;
             width: 200px;
             transform: scale(1, 1);
@@ -83,10 +81,9 @@
         }
         .buy-now {
             width: 200px;
-
             padding: 10px 20px;
-            background-color: #f02d34;
-            color: white;
+            background-color: var(--primary-light);
+            color: var(--background);
             border: none;
             margin-top: 40px;
             font-size: 18px;
