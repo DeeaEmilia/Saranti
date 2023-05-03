@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { useStateContext } from '../context/StateContext';
 import Cart from './Cart';
-import cartIcon from '../assets/cartIcon.png';
+import cartIcon from '../assets/cartIcon2.png';
 
 const Navbar = () => {
     const { showCart, setShowCart, totalQuantities } = useStateContext();
@@ -28,14 +28,18 @@ const Navbar = () => {
                         <Link to="/blog">Blog</Link>
                     </li>
                 </ul>
-                <button
-                    type="button"
-                    className="cart-icon"
-                    onClick={() => setShowCart(true)}
-                >
-                    <img src={cartIcon} alt="Custom Icon" />
-                    <span className="cart-item-qty">{totalQuantities}</span>
-                </button>
+                <div className="tooltip">
+                    <button
+                        type="button"
+                        className="cart-icon"
+                        onClick={() => setShowCart(true)}
+                        aria-label="View cart"
+                    >
+                        <img src={cartIcon} alt="Custom Icon" />
+                        <span className="cart-item-qty">{totalQuantities}</span>
+                    </button>
+                    <span className="tooltiptext">View cart</span>
+                </div>
             </div>
 
             {showCart && <Cart />}

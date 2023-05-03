@@ -16,7 +16,9 @@ const FooterBanner = ({ footerBanner }) => {
                     <h3>{footerBanner.midText}</h3>
                     <p>{footerBanner.description}</p>
                     <Link to={`/product/${footerBanner.product}`}>
-                        <button>{footerBanner.buttonText}</button>
+                        <button className="btn">
+                            {footerBanner.buttonText}
+                        </button>
                     </Link>
                 </div>
                 {footerBanner.image && (
