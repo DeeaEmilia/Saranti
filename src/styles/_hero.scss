@@ -53,7 +53,6 @@
 
         .cart-icon {
             font-size: 25px;
-            color: gray;
             cursor: pointer;
             position: relative;
             transition: transform 0.4s ease;
@@ -104,7 +103,7 @@
     }
     p {
         font-family: 'Raleway';
-        color: rgb(177, 177, 177);
+        color: var(--background-dark);
     }
 }
 
