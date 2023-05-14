@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { sanityClient } from '../helpers/client';
-import { FooterBanner, HeroBanner } from '../components';
-import { Product } from '../components';
+import FooterBanner from '../components/FooterBanner';
+import HeroBanner from '../components/HeroBanner';
+import Highlights from '../components/Highlights';
+import Product from '../components/Product';
 
 async function getSanityData() {
     const productQuery = '*[_type == "product"]';
@@ -23,6 +25,10 @@ const HomePage = () => {
     return (
         <div>
             <HeroBanner heroBanner={banner.length && banner[0]} />
+            <div className="highlights-container">
+                <h2>Saranti Highlights</h2>
+                <Highlights />
+            </div>
             <div className="products-heading">
                 <h2>Best Seller Products</h2>
                 <p>Incredible Variety</p>
