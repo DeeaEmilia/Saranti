@@ -81,7 +81,7 @@ a {
   font-family: "Caveat";
   font-size: 1.5rem;
   color: var(--background);
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 25px;
   background-color: var(--primary-light);
   box-shadow: inset 0px 0px 17px 10px rgba(104, 26, 156, 0.2);

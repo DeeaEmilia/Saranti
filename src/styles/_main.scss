@@ -1,56 +1,57 @@
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 .main-container {
-    max-width: 1400px;
-    margin: auto;
-    width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
 }
 .tooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -35%; /* Position the tooltip above the button */
+    left: 50%;
+    margin-left: -60px; /* Use half the width of the tooltip to center it */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  &:hover {
     .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px;
-        position: absolute;
-        z-index: 1;
-        bottom: -35%; /* Position the tooltip above the button */
-        left: 50%;
-        margin-left: -60px; /* Use half the width of the tooltip to center it */
-        opacity: 0;
-        transition: opacity 0.3s;
+      visibility: visible;
+      opacity: 1;
     }
-    &:hover {
-        .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
+  }
 }
-.btn {
-    font-family: 'Caveat';
-    font-size: 1.5rem;
-    color: var(--background);
-    padding: 1rem 1.5rem;
-    border-radius: 25px;
-    background-color: var(--primary-light);
-    box-shadow: inset 0px 0px 17px 10px rgba(104, 26, 156, 0.2);
-    background-image: url('../assets/old-paper.png');
-    background-size: cover;
-    text-decoration: none;
-    position: relative;
-    border: none;
-    z-index: 1000;
 
-    &:hover {
-        cursor: pointer;
-        background-color: var(--primary-dark);
-    }
+.btn {
+  font-family: "Caveat";
+  font-size: 1.5rem;
+  color: var(--background);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  background-color: var(--primary-light);
+  box-shadow: inset 0px 0px 17px 10px rgba(104, 26, 156, 0.2);
+  background-image: url("../assets/old-paper.png");
+  background-size: cover;
+  text-decoration: none;
+  position: relative;
+  border: none;
+  z-index: 1000;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary-dark);
+  }
 }
