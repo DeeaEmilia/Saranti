@@ -1,14 +1,15 @@
-@import 'reset';
-@import 'colors';
-@import 'main';
-@import 'hero';
-@import 'homepage';
-@import 'cart';
-@import 'product';
-@import 'footer';
-@import 'success';
-@import 'mediaqueries';
+@import "reset";
+@import "colors";
+@import "main";
+@import "hero";
+@import "homepage";
+@import "cart";
+@import "product";
+@import "footer";
+@import "success";
+@import "about";
+@import "mediaqueries";
 
 body {
-    background-color: var(--background);
+  background-color: var(--background);
 }
