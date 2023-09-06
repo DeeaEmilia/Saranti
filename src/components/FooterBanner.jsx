@@ -19,12 +19,6 @@ const FooterBanner = ({ footerBanner }) => {
             <button className="btn">{footerBanner.buttonText}</button>
           </Link>
         </div>
-        {footerBanner.image && (
-          <img
-            src={urlFor(footerBanner.image).url()}
-            className="footer-banner-image"
-          />
-        )}
       </div>
     </div>
   );

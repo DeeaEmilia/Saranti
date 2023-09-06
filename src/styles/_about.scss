@@ -1,14 +1,17 @@
 .about-us__container {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-items: center;
   padding: 0 1rem;
 
-  @media screen and (max-width: 800px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  @media screen and (min-width: $screen-xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   h1 {
@@ -16,10 +19,14 @@
     padding: 1rem;
     margin-bottom: 4rem;
     color: var(--neutral-beige);
-    grid-column: span 4;
+    grid-column: span 1;
 
-    @media screen and (max-width: 800px) {
-      grid-column: span 1;
+    @media screen and (min-width: $screen-xs) {
+      grid-column: span 2;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      grid-column: span 4;
     }
   }
 
@@ -32,17 +39,25 @@
     }
 
     &:nth-child(3) {
-      transform: translateY(50px);
+      @media screen and (min-width: $screen-lg) {
+        transform: translateY(50px);
+      }
+
       background-color: rgb(43, 141, 141);
     }
 
     &:nth-child(4) {
-      transform: translateY(100px);
+      @media screen and (min-width: $screen-lg) {
+        transform: translateY(100px);
+      }
       background-color: rgb(4, 65, 65);
     }
 
     &:nth-child(5) {
-      transform: translateY(150px);
+      @media screen and (min-width: $screen-lg) {
+        transform: translateY(150px);
+      }
+
       background-color: var(--secondary-medium);
     }
     h2 {
