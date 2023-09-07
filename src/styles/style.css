@@ -809,6 +809,12 @@ a {
   margin: 3rem 0;
 }
 
+.shop__products-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 800px) {
   .cart-heading {
     margin-top: 35px;
